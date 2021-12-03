@@ -1,0 +1,109 @@
+@import
+"colors",
+"fonts";
+
+footer{
+    background-color: $black;
+    color: $white;
+    margin-top: 11rem;
+    padding: 5rem 0;
+    @media screen and(min-width: 991px) {
+        padding: 5rem 0 3rem 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and(min-width: 991px){
+            flex-direction: row;
+            align-items: revert;
+            justify-content: space-between;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            @media screen and(min-width: 991px ) {
+                align-items: flex-start;
+            }
+            .img_footer{
+                width: 14.4rem;
+                height: 2.4rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .nav_footer{
+                .menu_footer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @media screen and(min-width: 991px) {
+                        flex-direction: row;
+                    }
+                    .item{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .menu_footer_item{
+                            margin: .8rem 0;
+                            @media screen and(min-width: 991px) {
+                                margin: 0 2rem .9rem 0;
+                            }
+                            a{
+                                font-size: 1.5rem;
+                                font-family: 'Alata', sans-serif;
+                                font-weight: 400;
+                            }
+                        }
+                        span{
+                            height: 3px;
+                            width: 30%;
+                            background-color: $white;
+                            position: relative;
+                            right: 10px;
+                            bottom: 4px;
+                            opacity: 0;
+                            transition: .3s all ease-in-out;
+                        }
+                        &:hover{
+                            span{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .social{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            @media screen and(min-width: 991px) {
+                align-items: flex-end;
+            }
+            .social_nav{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    
+                    .social_item{
+                        margin: 0 .9rem;
+                    }
+                }
+            }
+            .mentions{
+                p{
+                    font-family: 'Alata', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,22 @@
+main{
+    .main__text{
+        padding: 6rem 0;
+        @media screen and(min-width: 992px) {
+            padding: 0;
+        }
+        h2{
+            letter-spacing: .4rem;
+        }
+    }
+    picture{
+        img, source{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media screen and(min-width: 992px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+    }
+}

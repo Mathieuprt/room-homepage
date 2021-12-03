@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="node_modules/swiffy-slider/dist/css/swiffy-slider.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero__slide">
+            <div class="container">
+                <header>
+                    <nav class="nav-header">
+                        <button class="menu-toggler">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </button>
+                        <ul class="menu-header">
+                            <li class="menu-item"><a href="#">Home</a></li>
+                            <li class="menu-item"><a href="#">Shop</a></li>
+                            <li class="menu-item"><a href="#">About</a></li>
+                            <li class="menu-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo_header">
+                        <img src="images/logo.svg" alt="Logo">
+                    </div>
+                </header>
+            </div>
+            <div class="swiffy-slider slider-nav-square slider-nav-page slider-nav-visible slider-item-nogap">
+                <ul class="slider-container">
+                    <li>
+                        <picture>
+                            <source srcset="images/mobile-image-hero-1.webp" type="images/webp" media="(max-width: 992px)">
+                            <source srcset="images/desktop-image-hero-1.webp" type="images/webp">
+            
+                            <source srcset="images/mobile-image-hero-1.jpg" type="images/jpeg" media="(max-width: 992px)">
+                            <source srcset="images/desktop-image-hero-1.jpg" type="images/jpeg">
+            
+                            <img src="images/mobile-image-hero-1.jpg" alt="Image slider">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="images/mobile-image-hero-2.webp" type="images/webp" media="(max-width: 992px)">
+                            <source srcset="images/desktop-image-hero-2.webp" type="images/webp">
+            
+                            <source srcset="images/mobile-image-hero-2.jpg" type="images/jpeg" media="(max-width: 992px)">
+                            <source srcset="images/desktop-image-hero-2.jpg" type="images/jpeg">
+            
+                            <img src="images/mobile-image-hero-2.jpg" alt="Image slider">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="images/mobile-image-hero-3.webp" type="images/webp" media="(max-width: 992px)">
+                            <source srcset="images/desktop-image-hero-3.webp" type="images/webp">
+            
+                            <source srcset="images/mobile-image-hero-3.jpg" type="images/jpeg" media="(max-width: 992px)">
+                            <source srcset="images/desktop-image-hero-3.jpg" type="images/jpeg">
+            
+                            <img src="images/mobile-image-hero-3.jpg" alt="Image slider">
+                        </picture>
+                    </li>
+                    
+                </ul>
+                <button type="button" class="slider-nav left" aria-label="Arrow left for the slider"></button>
+                <button type="button" class="slider-nav slider-nav-next" aria-label="Arrow right for the slider"></button>
+            </div>
+        </div>
+        <div class="hero__text">
+            <div class="container">
+                <h1 class="hero__title">
+                    Discover innovative ways to decorate
+                </h1>
+                <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+                <div class="hero__shop--now">
+                    <span>Shop now</span>
+                    <img src="images/icon-arrow.svg" alt="Arrow right">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <picture>
+            <source srcset="images/image-about-dark.webp" type="image/webp">
+            <source srcset="images/image-about-dark.jpg" type="image/jpeg">
+            <img src="images/image-about-dark.jpg" alt="Photo d'un salon">
+        </picture>
+        <section class="main__text">
+            <div class="container">
+                <h2>About our furnitures</h2>
+            <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space. </p>
+            </div>
+        </section>
+        <picture>
+            <source srcset="images/image-about-light.webp" type="image/webp">
+            <source srcset="images/image-about-light.jpg" type="image/jpeg">
+            <img src="images/image-about-light.jpg" alt="Photo d'un salon">
+        </picture>
+        
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="node_modules/swiffy-slider/dist/js/swiffy-slider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 2.8rem;
+    color: $black;
+    font-weight: 600;
+    line-height: 1;
+    @media screen and(min-width: 992px){
+        font-size: 4rem;
+    }
+}
+h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $gray;
+    line-height: 1.7;
+}
